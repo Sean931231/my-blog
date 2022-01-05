@@ -63,7 +63,7 @@ const store = createStore({
 
 const unsub = onAuthStateChanged(auth, (user) => {
     store.commit('setAuthIsReady', true)
-    store.commit('setuser', user)
+    store.commit('setUser', user)
     unsub()
 })
 
